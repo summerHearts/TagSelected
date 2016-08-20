@@ -1,0 +1,15 @@
+PODS:
+  - HMSegmentedControl (1.5.2)
+  - Masonry (1.0.1)
+
+DEPENDENCIES:
+  - HMSegmentedControl
+  - Masonry
+
+SPEC CHECKSUMS:
+  HMSegmentedControl: 83b9686022d2176fb6457d2bdb61e5d6393fed7d
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+
+PODFILE CHECKSUM: dbdb640cc47ed68b895a11a35d7615663f5e236d
+
+COCOAPODS: 1.0.1
