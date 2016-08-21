@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "UIImage+Tint.h"
 static NSString *const SelecteTagCellIdentifier = @"SelecteTagCellIdentifier";
 @interface SelecteTagCell : UITableViewCell
 @property (assign,nonatomic) BOOL selectedFlag;

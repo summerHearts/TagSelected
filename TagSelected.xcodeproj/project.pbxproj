@@ -13,6 +13,7 @@
 		AE78732E1D6856B9006F0A83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE78732C1D6856B9006F0A83 /* Main.storyboard */; };
 		AE7873301D6856B9006F0A83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE78732F1D6856B9006F0A83 /* Assets.xcassets */; };
 		AE7873331D6856B9006F0A83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE7873311D6856B9006F0A83 /* LaunchScreen.storyboard */; };
+		AEAAFA9D1D69BC1C004A64BE /* UIImage+Tint.m in Sources */ = {isa = PBXBuildFile; fileRef = AEAAFA9C1D69BC1C004A64BE /* UIImage+Tint.m */; };
 		AEB3345A1D68760D004D787B /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB334551D68760D004D787B /* UIColor+Hex.m */; };
 		AEB3345B1D68760D004D787B /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB334571D68760D004D787B /* UIImage+Color.m */; };
 		AEB3345C1D68760D004D787B /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB334591D68760D004D787B /* UIView+Extension.m */; };
@@ -35,6 +36,8 @@
 		AE78732F1D6856B9006F0A83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE7873321D6856B9006F0A83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE7873341D6856B9006F0A83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEAAFA9B1D69BC1C004A64BE /* UIImage+Tint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tint.h"; sourceTree = "<group>"; };
+		AEAAFA9C1D69BC1C004A64BE /* UIImage+Tint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tint.m"; sourceTree = "<group>"; };
 		AEB334541D68760D004D787B /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		AEB334551D68760D004D787B /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		AEB334561D68760D004D787B /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
@@ -130,6 +133,8 @@
 		AEB334531D6875FA004D787B /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				AEAAFA9B1D69BC1C004A64BE /* UIImage+Tint.h */,
+				AEAAFA9C1D69BC1C004A64BE /* UIImage+Tint.m */,
 				AEB334541D68760D004D787B /* UIColor+Hex.h */,
 				AEB334551D68760D004D787B /* UIColor+Hex.m */,
 				AEB334561D68760D004D787B /* UIImage+Color.h */,
@@ -297,6 +302,7 @@
 				AE7873251D6856B9006F0A83 /* main.m in Sources */,
 				AEB3345B1D68760D004D787B /* UIImage+Color.m in Sources */,
 				AEB3346D1D68769A004D787B /* FieldTableController.m in Sources */,
+				AEAAFA9D1D69BC1C004A64BE /* UIImage+Tint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

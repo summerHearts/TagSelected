@@ -85,7 +85,7 @@
         NSDictionary *dict = _items[indexPath.row];
         cell.titleLabels.text = _titleBlock(dict);
     }
-    
+    cell.currentSelectedFlag = self.tableView.tag;
     if (_flagBlock) {
         cell.selectedFlag = _flagBlock(_items[indexPath.row]);
     }

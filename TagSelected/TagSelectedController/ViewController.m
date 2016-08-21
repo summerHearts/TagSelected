@@ -207,6 +207,8 @@
     [self loadOrderDataWithIndex:_segmentTag];
 }
 - (void)loadOrderDataWithIndex:(NSInteger)index{
+    [self transitionNavigationBarColor:index];
+    
     if (self.fieldTableController==nil) {
         self.fieldTableController=[[FieldTableController alloc]init];
         [self addChildViewController:self.fieldTableController];
@@ -243,5 +245,20 @@
     }];
     self.fieldTableController.tableView.tag = index;
 }
-
+#pragma mark -更改状态栏的颜色
+- (void)transitionNavigationBarColor:(NSInteger)index{
+    NSMutableArray  *selectionIndicatorColorArray = [NSMutableArray arrayWithObjects:
+                                                     [UIColor colorWithHexString:@"00bb31"],
+                                                     [UIColor colorWithHexString:@"00b5e2"],
+                                                     [UIColor colorWithHexString:@"cb333b"],
+                                                     [UIColor colorWithHexString:@"333f48"],
+                                                     [UIColor colorWithHexString:@"5b6770"],
+                                                     nil];
+    [[UINavigationBar appearance] setBackgroundImage:[[UIImage alloc] init] forBarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
+    self.navigationController.navigationBar.barTintColor = [selectionIndicatorColorArray objectAtIndex:index];
+    [self.navigationController.navigationBar setBackgroundImage:[[UIImage createImageWithColor:[selectionIndicatorColorArray objectAtIndex:index]] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 5, 10, 5)] forBarMetrics:UIBarMetricsDefault];
+    self.hmSegmentedControl.selectionIndicatorColor = [selectionIndicatorColorArray objectAtIndex:index];
+    [self.hmSegmentedControl setNeedsDisplay];
+}
 @end

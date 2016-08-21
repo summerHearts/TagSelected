@@ -44,7 +44,7 @@
     
     if (self.selectedFlag){
         UIImage *image=  [UIImage imageNamed:@"selected"];
-        [self.selectedIcon setImage:image];
+        [self.selectedIcon setImage:[image imageWithTintColor:[self.selectionIndicatorColorArray objectAtIndex:self.currentSelectedFlag]]];
     }else{
         [self.selectedIcon setImage:nil];
     }
